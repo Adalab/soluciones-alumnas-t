@@ -1,0 +1,99 @@
+:root {
+    font-size: 62.5%;
+    --primary-color: #CC212A;
+    --secondary-color: #fff;
+    --background-color: #fff;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* main */
+
+.main {
+    font-family: var(--font-family);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.main__hero--hex, .main__hero--name {
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.main__hero--hex {
+    text-transform: uppercase;
+}
+
+.main__hero--name::first-letter {
+    text-transform: uppercase;
+}
+
+/* Yo he usado dos bloques de texto (h1 y p), pero en la solución viene este truqui para que la primera linea tenga una palabra:
+
+    .title::first-line {
+    word-spacing: 100vw;
+    }
+
+*/
+
+/* footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    border-top: 5px solid var(--primary-color);
+}
+.footer__ball {
+    transform: translateY(-50%);
+}
+
+.footer__ball--text, .footer__copy {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.footer__ball--text {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 480px) {
+    .footer {
+        flex-flow: row-reverse wrap;
+        justify-content: space-between;
+        padding: 15px 35px;
+    }
+
+    .footer__ball {
+    transform: none;
+    }
+
+}
+
