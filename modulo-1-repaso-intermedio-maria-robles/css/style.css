@@ -1,0 +1,91 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #cc212a;
+  --secondary-color: white;
+}
+
+.main {
+  height: 80vh;
+}
+
+.main-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.footer {
+  width: 100%;
+  height: 20%;
+  position: sticky;
+}
+
+.line {
+  background-color: var(--primary-color);
+  height: 0.3rem;
+}
+
+.footer-logo {
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 100%;
+  transform: translate(-50%, 50%);
+  z-index: 999;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-copy {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center;
+  }
+
+  .footer-logo {
+    position: relative;
+    top: -2.5rem;
+    left: 2.5rem;
+  }
+
+  .footer-copy {
+    position: static;
+  }
+}
