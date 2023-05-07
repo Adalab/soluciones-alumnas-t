@@ -1,0 +1,29 @@
+@media screen and (min-width: 480px) {
+    .footer {
+        flex-direction: unset;
+        justify-content: space-between;
+        
+    }
+    .footer__brand {
+        width: 9vh;
+        margin-right: 6vh;
+    }
+    .footer__brand--img {
+        bottom: 5.3vh;
+    }
+    .footer__brand--text {
+        position: unset;
+        margin-top: 2.3vh;
+    }
+    .footer__line {
+        bottom: 20vh;
+        position: fixed;
+    }
+    .footer__text {
+        position: unset;
+        margin-left: 6vh;
+    }
+    .footer__text--p {
+        position: unset;
+    }
+}
