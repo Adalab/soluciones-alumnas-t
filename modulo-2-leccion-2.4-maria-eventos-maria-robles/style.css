@@ -1,0 +1,9 @@
+.style {
+  background-color: lightpink;
+  color: white;
+  border: 1px solid hotpink;
+}
+
+.hidden {
+  display: none;
+}
