@@ -1,0 +1,14 @@
+.img {
+  border: 2px solid;
+  width: 100px;
+  height: 100px;
+}
+
+.form {
+  margin-left: 90px;
+}
+
+.dataForm {
+  display: flex;
+  flex-direction: column;
+}
